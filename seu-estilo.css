@@ -751,20 +751,36 @@ padding: 20px;
       padding: 10px 15px;
       font-size: 16px;
     }
-    /* estilo padrão: mobile first */
-body {
-  font-size: 14px;
+/* Celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
 }
 
-/* tablets e maiores */
-@media (min-width: 768px) {
+/* Celulares médios e grandes (481px a 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+/* Tablets (768px a 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
   body {
     font-size: 16px;
   }
 }
 
-/* desktops grandes */
-@media (min-width: 1200px) {
+/* Laptops e desktops médios (1025px a 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  body {
+    font-size: 17px;
+  }
+}
+
+/* Telas grandes (acima de 1440px) */
+@media (min-width: 1441px) {
   body {
     font-size: 18px;
   }
